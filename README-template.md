@@ -45,6 +45,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+1. started with CSS Flexbox
+2. realized I could build the mobile site with Flexbox but I would need CSS grid to make the desktop layout work
+3. tried to figure out CSS grid and got really overwhelmed and got stuck
+4. took a couple of days off, then came back. watched a short tutorial on egghead.io, read through CSS grid on css-tricks.com for the 10th or 15th time, and started over
+5. this time something was clicking and I was able to figure out how to get the appropriate columns and how to reposition my grid items according to the design mockup
+6. got stuck again because there was all this extra white space after my grid items and I couldn't figure out where it was coming from. spent a long time on Stack Overflow and Google trying to figure this out.
+7. finally had my eureka/facepalm moment when I realized that in my mobile CSS, the width of the grid items was set to 87%. I changed this to 100% and voila, the grid items slid nicely into place--no more extra white space!
+
 ### Built with
 
 - Semantic HTML5 markup
