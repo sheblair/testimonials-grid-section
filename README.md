@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/testimonials-grid-using-html-and-css-zfkbxKe7kD)
-- Live Site URL: [Add live site URL here](https://sheblair.github.io/testimonials-grid-section-main/)
+- [Solution](https://www.frontendmentor.io/solutions/testimonials-grid-using-html-and-css-zfkbxKe7kD)
+- [Live Site](https://sheblair.github.io/testimonials-grid-section-main/)
 
 ## My process
 
@@ -69,5 +69,5 @@ I definitely want to keep working with and experimenting with CSS Grid. It was d
 ## Author
 
 - Website - [Sheila Blair](https://github.com/sheblair)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/sheblair]
+- Frontend Mentor - [@sheblair](https://www.frontendmentor.io/profile/sheblair)
 
