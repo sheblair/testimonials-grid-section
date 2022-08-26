@@ -18,29 +18,28 @@ body {
 main {
     display: grid;
     justify-items: center;
-    grid-gap: 25px;
-    width: 85%;
+    grid-gap: 20px;
+    width: 75%;
     margin: 50px auto;
 }
 
 .section {
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    flex-flow: row wrap;
     border-radius: 10px;
     padding: 0 30px 20px 0;
     box-shadow: 2px 2px 20px #c5c7c6;
 }
 
+.name-and-photo {
+    display: flex;
+    flex-flow: row;
+}
+
 .name-and-title {
-    width: 50%;
-    margin: 30px 0 0 15px;
+    padding: 25px 0 0 15px;
 }
 
 .reviews {
-    width: 90%;
-    margin: 0 0 20px 30px;
+    padding: 0 0 0 30px;
 }
 
 .photo {
@@ -48,7 +47,7 @@ main {
     border: 2px solid rgb(183, 141, 214);
     width: 28px;
     height: 28px;
-    margin: 30px 0 0 30px;
+    margin: 25px 0 0 30px;
 }
 
 p.name {
@@ -65,13 +64,14 @@ p.title {
 .pull-quote {
     font-weight: 600;
     font-size: 1.5em;
-    margin: 25px 0;
+    padding: 20px 0;
 }
 
 .main-quote {
     font-weight: 500;
     opacity: 70%;
     line-height: 1.5em;
+    margin-bottom: 10px;
 }
 
 #testimonial-one {
@@ -118,49 +118,19 @@ p.title {
     color: hsl(217, 19%, 35%);
 }
 
-@media screen and (min-width: 768px) {
-
-/* TABLET STYLES HERE */
-
-    main {
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: stretch;
-        align-items: stretch;
-    }
-
-    #testimonial-one {
-        grid-column: 1 / span 4;
-    }
-
-    #testimonial-two {
-        grid-column: 3 / span 2;
-    }
-
-    #testimonial-three {
-        grid-column: 1 / span 2;
-        grid-row-start: 2;
-    }
-
-    #testimonial-four {
-        grid-column: 1 / span 4;
-        grid-row-start: 3;
-    }
-
-    #testimonial-five {
-        grid-column: 1 / span 4;
-        grid-row-start: 4;
-    }
-}
-
 @media screen and (min-width: 1440px) {
 
 /* DESKTOP STYLES HERE */
 
     main {
         grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 49% 46%; 
         justify-items: stretch;
-        align-items: stretch;
         margin-top: 200px;
+    }
+    
+    .main-quote {
+        margin-bottom: 0;
     }
 
     #testimonial-one {
@@ -177,6 +147,10 @@ p.title {
         grid-row-start: 2;
     }
 
+    #testimonial-three .pull-quote {
+        width: 90%;
+    }
+
     #testimonial-four {
         grid-column: 2 / span 2;
         grid-row-start: 2;
@@ -185,11 +159,10 @@ p.title {
     #testimonial-five {
         grid-row: 1 / span 2;
         grid-column-start: 4;
-        /* align-items: stretch; */
     }
 
-    /*
-    #testimonial-five .reviews {
-        width: 80%;
-    } */
+    #testimonial-five .main-quote {
+        margin-bottom: 15px;
+    }
+
 }
