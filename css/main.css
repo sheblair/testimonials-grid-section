@@ -40,7 +40,7 @@ main {
 
 .reviews {
     width: 90%;
-    margin: 0 0 10px 30px;
+    margin: 0 0 20px 30px;
 }
 
 .photo {
@@ -85,9 +85,18 @@ p.title {
     background-color: hsl(217, 19%, 35%);
 }
 
+#testimonial-two .photo {
+    border: none;
+}
+
 #testimonial-three {
     background-color: hsl(0, 0%, 100%);
     color:hsl(217, 19%, 35%);
+    border: none
+}
+
+#testimonial-three .photo {
+    border: none;
 }
 
 #testimonial-four {
@@ -97,6 +106,11 @@ p.title {
 #testimonial-five {
     background-color: hsl(0, 0%, 100%);
     color:hsl(217, 19%, 35%);
+    border: none;
+}
+
+#testimonial-five .photo {
+    border: none;
 }
 
 .attribution {
